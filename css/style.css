@@ -1,0 +1,277 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif; /* Sets default font */
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333; /* Dark gray text for readability */
+}
+
+/* Header Styling */
+header {
+  background-color: #333; /* Dark background */
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 36px;
+  margin: 0;
+}
+
+/* Navigation Menu */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Dropdown menu */
+nav ul {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+header:hover nav ul {
+  display: block;
+}
+
+/* Section Styling */
+section {
+  padding: 20px;
+  margin: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-size: 28px;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+/* Styling for Saved Items Page */
+.saved-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.saved-items img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover; /* Ensures images fit properly */
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+.saved-items img:hover {
+  transform: scale(1.05);
+}
+
+#empty-message {
+  text-align: center;
+  font-size: 18px;
+  color: #777;
+}
+
+/* Pricing Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+table th {
+  background-color: #0b5568;
+  color: white;
+}
+
+table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Form Styling */
+form {
+  max-width: 500px;
+  margin: auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+form label {
+  font-size: 16px;
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+form input, form textarea, form button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+form button {
+  background-color: #0077b6;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+form button:hover {
+  background-color: #005f8d;
+}
+
+.radio-group {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.radio-group input[type="radio"] {
+  margin: 0 5px 0 0;
+}
+
+/* Gallery Styling */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.photo-item {
+  width: 300px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.photo-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  border-radius: 5px;
+}
+
+/* Buttons Styling */
+.like-btn, .save-btn, .comment-btn {
+  background-color: #0077b6;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  margin-top: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.like-btn:hover, .save-btn:hover, .comment-btn:hover {
+  background-color: #005f8d;
+}
+
+/* Comment Section */
+.comments-section {
+  width: 100%;
+  margin-top: 10px;
+  text-align: center;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+}
+
+.comment-input {
+  width: calc(100% - 20px);
+  padding: 5px;
+  margin-bottom: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.comment-btn {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.comment-btn:hover {
+  background-color: #555;
+}
+
+/* Animation */
+h2 {
+  display: none;
+  animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+footer a {
+  color: #ffcc00;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}

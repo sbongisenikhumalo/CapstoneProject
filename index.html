@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Sets the character encoding for proper text display -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Makes the page responsive -->
+    <title>Photography Gallery</title> <!-- The title of the page that appears in the browser tab -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Links to the external CSS file for styling -->
+</head>
+<body>
+    <!-- Header Section: Contains the website title and navigation menu -->
+    <header>
+        <h1>Welcome to My Photography Website</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li> 
+                <li><a href="saveForLater.html">Save for Later</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Gallery Section: Displays photography images with like, save, and comment functionalities -->
+    <section class="gallery">
+        <!-- Each photo-item represents an image with interaction buttons -->
+        <div class="photo-item" data-photo="1">
+            <img src="images/photo1.jpg" alt="Photo 1">
+            <button class="like-btn" data-photo="1">Like ❤️ (<span class="like-count">0</span>)</button> <!-- Like button -->
+            <button class="save-btn" data-photo="1">Save for Later</button>
+            <div class="comments-section">
+                <input type="text" class="comment-input" placeholder="Leave a comment"> <!-- Comment input field -->
+                <button class="comment-btn" data-photo="1">Submit</button> <!-- Submit button for comments -->
+                <ul class="comment-list" data-photo="1"></ul> <!-- List to display comments -->
+            </div>
+        </div>
+        
+        <div class="photo-item" data-photo="2">
+            <img src="images/photo2.jpg" alt="Photo 2">
+            <button class="like-btn" data-photo="2">Like ❤️ (<span class="like-count">0</span>)</button>
+            <button class="save-btn" data-photo="2">Save for Later</button>
+            <div class="comments-section">
+                <input type="text" class="comment-input" placeholder="Leave a comment">
+                <button class="comment-btn" data-photo="2">Submit</button>
+                <ul class="comment-list" data-photo="2"></ul>
+            </div>
+        </div>
+
+        <div class="photo-item" data-photo="3">
+            <img src="images/photo3.jpg" alt="Photo 3">
+            <button class="like-btn" data-photo="3">Like ❤️ (<span class="like-count">0</span>)</button>
+            <button class="save-btn" data-photo="3">Save for Later</button>
+            <div class="comments-section">
+                <input type="text" class="comment-input" placeholder="Leave a comment">
+                <button class="comment-btn" data-photo="3">Submit</button>
+                <ul class="comment-list" data-photo="3"></ul>
+            </div>
+        </div>
+
+        <div class="photo-item" data-photo="4">
+            <img src="images/photo4.jpg" alt="Photo 4">
+            <button class="like-btn" data-photo="4">Like ❤️ (<span class="like-count">0</span>)</button>
+            <button class="save-btn" data-photo="4">Save for Later</button>
+            <div class="comments-section">
+                <input type="text" class="comment-input" placeholder="Leave a comment">
+                <button class="comment-btn" data-photo="4">Submit</button>
+                <ul class="comment-list" data-photo="4"></ul>
+            </div>
+        </div>
+
+        <div class="photo-item" data-photo="5">
+            <img src="images/photo5.jpg" alt="Photo 5">
+            <button class="like-btn" data-photo="5">Like ❤️ (<span class="like-count">0</span>)</button>
+            <button class="save-btn" data-photo="5">Save for Later</button>
+            <div class="comments-section">
+                <input type="text" class="comment-input" placeholder="Leave a comment">
+                <button class="comment-btn" data-photo="5">Submit</button>
+                <ul class="comment-list" data-photo="5"></ul>
+            </div>
+        </div>
+
+        <div class="photo-item" data-photo="6">
+            <img src="images/photo6.jpg" alt="Photo 6">
+            <button class="like-btn" data-photo="6">Like ❤️ (<span class="like-count">0</span>)</button>
+            <button class="save-btn" data-photo="6">Save for Later</button>
+            <div class="comments-section">
+                <input type="text" class="comment-input" placeholder="Leave a comment">
+                <button class="comment-btn" data-photo="6">Submit</button>
+                <ul class="comment-list" data-photo="6"></ul>
+            </div>
+        </div>
+
+        <div class="photo-item" data-photo="7">
+            <img src="images/photo7.jpg" alt="Photo 7">
+            <button class="like-btn" data-photo="7">Like ❤️ (<span class="like-count">0</span>)</button>
+            <button class="save-btn" data-photo="7">Save for Later</button>
+            <div class="comments-section">
+                <input type="text" class="comment-input" placeholder="Leave a comment">
+                <button class="comment-btn" data-photo="7">Submit</button>
+                <ul class="comment-list" data-photo="7"></ul>
+            </div>
+        </div>
+
+        <div class="photo-item" data-photo="8">
+            <img src="images/photo8.jpg" alt="Photo 8">
+            <button class="like-btn" data-photo="8">Like ❤️ (<span class="like-count">0</span>)</button>
+            <button class="save-btn" data-photo="8">Save for Later</button>
+            <div class="comments-section">
+                <input type="text" class="comment-input" placeholder="Leave a comment">
+                <button class="comment-btn" data-photo="8">Submit</button>
+                <ul class="comment-list" data-photo="8"></ul>
+            </div>
+        </div>
+
+        <div class="photo-item" data-photo="9">
+            <img src="images/photo9.jpg" alt="Photo 9">
+            <button class="like-btn" data-photo="9">Like ❤️ (<span class="like-count">0</span>)</button>
+            <button class="save-btn" data-photo="9">Save for Later</button>
+            <div class="comments-section">
+                <input type="text" class="comment-input" placeholder="Leave a comment">
+                <button class="comment-btn" data-photo="9">Submit</button>
+                <ul class="comment-list" data-photo="9"></ul>
+            </div>
+        </div>
+
+        <div class="photo-item" data-photo="10">
+            <img src="images/photo10.jpg" alt="Photo 10">
+            <button class="like-btn" data-photo="10">Like ❤️ (<span class="like-count">0</span>)</button>
+            <button class="save-btn" data-photo="10">Save for Later</button>
+            <div class="comments-section">
+                <input type="text" class="comment-input" placeholder="Leave a comment">
+                <button class="comment-btn" data-photo="10">Submit</button>
+                <ul class="comment-list" data-photo="10"></ul>
+            </div>
+        </div>
+
+        <div class="photo-item" data-photo="11">
+            <img src="images/photo11.jpg" alt="Photo 11">
+            <button class="like-btn" data-photo="11">Like ❤️ (<span class="like-count">0</span>)</button>
+            <button class="save-btn" data-photo="11">Save for Later</button>
+            <div class="comments-section">
+                <input type="text" class="comment-input" placeholder="Leave a comment">
+                <button class="comment-btn" data-photo="11">Submit</button>
+                <ul class="comment-list" data-photo="11"></ul>
+            </div>
+        </div>
+
+        <div class="photo-item" data-photo="12">
+            <img src="images/photo12.jpg" alt="Photo 12">
+            <button class="like-btn" data-photo="12">Like ❤️ (<span class="like-count">0</span>)</button>
+            <button class="save-btn" data-photo="12">Save for Later</button>
+            <div class="comments-section">
+                <input type="text" class="comment-input" placeholder="Leave a comment">
+                <button class="comment-btn" data-photo="12">Submit</button>
+                <ul class="comment-list" data-photo="12"></ul>
+            </div>
+        </div>
+
+        <div class="photo-item" data-photo="13">
+            <img src="images/photo13.jpg" alt="Photo 13">
+            <button class="like-btn" data-photo="13">Like ❤️ (<span class="like-count">0</span>)</button>
+            <button class="save-btn" data-photo="13">Save for Later</button>
+            <div class="comments-section">
+                <input type="text" class="comment-input" placeholder="Leave a comment">
+                <button class="comment-btn" data-photo="13">Submit</button>
+                <ul class="comment-list" data-photo="13"></ul>
+            </div>
+        </div>
+
+        <div class="photo-item" data-photo="14">
+            <img src="images/photo14.jpg" alt="Photo 14">
+            <button class="like-btn" data-photo="14">Like ❤️ (<span class="like-count">0</span>)</button>
+            <button class="save-btn" data-photo="14">Save for Later</button>
+            <div class="comments-section">
+                <input type="text" class="comment-input" placeholder="Leave a comment">
+                <button class="comment-btn" data-photo="14">Submit</button>
+                <ul class="comment-list" data-photo="14"></ul>
+            </div>
+        </div>
+
+        <div class="photo-item" data-photo="15">
+            <img src="images/photo15.jpg" alt="Photo 15">
+            <button class="like-btn" data-photo="15">Like ❤️ (<span class="like-count">0</span>)</button>
+            <button class="save-btn" data-photo="15">Save for Later</button>
+            <div class="comments-section">
+                <input type="text" class="comment-input" placeholder="Leave a comment">
+                <button class="comment-btn" data-photo="15">Submit</button>
+                <ul class="comment-list" data-photo="15"></ul>
+            </div>
+        </div>
+
+        <div class="photo-item" data-photo="16">
+            <img src="images/photo16.jpg" alt="Photo 16">
+            <button class="like-btn" data-photo="16">Like ❤️ (<span class="like-count">0</span>)</button>
+            <button class="save-btn" data-photo="16">Save for Later</button>
+            <div class="comments-section">
+                <input type="text" class="comment-input" placeholder="Leave a comment">
+                <button class="comment-btn" data-photo="16">Submit</button>
+                <ul class="comment-list" data-photo="16"></ul>
+            </div>
+        </div>
+
+        <div class="photo-item" data-photo="17">
+            <img src="images/photo17.jpg" alt="Photo 17">
+            <button class="like-btn" data-photo="17">Like ❤️ (<span class="like-count">0</span>)</button>
+            <button class="save-btn" data-photo="17">Save for Later</button>
+            <div class="comments-section">
+                <input type="text" class="comment-input" placeholder="Leave a comment">
+                <button class="comment-btn" data-photo="17">Submit</button>
+                <ul class="comment-list" data-photo="17"></ul>
+            </div>
+        </div>
+
+        <div class="photo-item" data-photo="18">
+            <img src="images/photo18.jpg" alt="Photo 18">
+            <button class="like-btn" data-photo="18">Like ❤️ (<span class="like-count">0</span>)</button>
+            <button class="save-btn" data-photo="18">Save for Later</button>
+            <div class="comments-section">
+                <input type="text" class="comment-input" placeholder="Leave a comment">
+                <button class="comment-btn" data-photo="18">Submit</button>
+                <ul class="comment-list" data-photo="18"></ul>
+            </div>
+        </div>
+
+        <div class="photo-item" data-photo="19">
+            <img src="images/photo19.jpg" alt="Photo 19">
+            <button class="like-btn" data-photo="18">Like ❤️ (<span class="like-count">0</span>)</button>
+            <button class="save-btn" data-photo="18">Save for Later</button>
+            <div class="comments-section">
+                <input type="text" class="comment-input" placeholder="Leave a comment">
+                <button class="comment-btn" data-photo="19">Submit</button>
+                <ul class="comment-list" data-photo="19"></ul>
+            </div>
+        </div>
+
+        <div class="photo-item" data-photo="20">
+            <img src="images/photo20.jpg" alt="Photo 20">
+            <button class="like-btn" data-photo="20">Like ❤️ (<span class="like-count">0</span>)</button>
+            <button class="save-btn" data-photo="20">Save for Later</button>
+            <div class="comments-section">
+                <input type="text" class="comment-input" placeholder="Leave a comment">
+                <button class="comment-btn" data-photo="20">Submit</button>
+                <ul class="comment-list" data-photo="20"></ul>
+            </div>
+        </div>
+    </section>
+    <!-- Pricing Table Section: Lists different photography services and their prices -->
+    <section>
+        <h2>Photography Pricing</h2> <!-- Subheading for the pricing section -->
+        <table>
+            <!-- Table headers -->
+            <tr>
+                <th>Service</th> <!-- Header for service column -->
+                <th>Price</th> <!-- Header for price column -->
+            </tr>
+            <!-- Table rows with data -->
+            <tr>
+                <td>Portrait Photography</td> <!-- Service name -->
+                <td>R150</td> <!-- Price -->
+            </tr>
+            <tr>
+                <td>Wedding Photography</td>
+                <td>R1000</td>
+            </tr>
+            <tr>
+                <td>Baby Shower Photography</td>
+                <td>R500</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Footer Section: Provides additional links and contact information -->
+    <footer>
+        <p>Visit my <a href="https://mywebsiteforphotography.blogspot.com/" target="_blank">blog</a> or email me at <a href="mailto:sbongakhumalo5@gmail.com">sbongakhumalo5@gmail.com</a>.</p>
+    </footer>
+
+    <!-- jQuery Library for animations and interactions -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/saveForLater.js"></script>
+</body>
+</html>

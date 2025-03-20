@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header section: Contains the page title and navigation menu -->
+    <header>
+        <h1>Contact Me</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li> 
+                <li><a href="saveForLater.html">Save for Later</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Section: Contact Form -->
+    <section>
+        <h2>Get in Touch</h2>
+        <form id="contact-form"> 
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <p>What type of photography do you like?</p>
+            <div class="radio-group">
+                <input type="radio" id="portrait" name="photography" value="Portrait">
+                <label for="portrait">Portrait</label>
+                <input type="radio" id="landscape" name="photography" value="Landscape">
+                <label for="landscape">Landscape</label>
+            </div>
+            
+            <button type="submit">Submit</button>
+        </form>
+        <p id="form-message" style="display:none; color: green;">Thank you! Your message has been sent.</p>
+    </section>
+
+    <!-- Footer section -->
+    <footer>
+        <p>&copy; 2024 My Photography Website</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#contact-form").on("submit", function (e) {
+                e.preventDefault(); // Prevents the page from refreshing
+                
+                // Get form values
+                let email = $("#email").val();
+                let subject = $("#subject").val();
+                let message = $("#message").val();
+                let photographyType = $("input[name='photography']:checked").val();
+                
+                if (!photographyType) {
+                    alert("Please select a photography preference.");
+                    return;
+                }
+                
+                // Store data in localStorage
+                localStorage.setItem("contactEmail", email);
+                localStorage.setItem("contactSubject", subject);
+                localStorage.setItem("contactMessage", message);
+                localStorage.setItem("contactPhotographyType", photographyType);
+                
+                // Show confirmation message
+                $("#form-message").fadeIn().delay(3000).fadeOut();
+                $(this).trigger("reset"); // Reset form fields
+            });
+        });
+    </script>
+</body>
+</html>
